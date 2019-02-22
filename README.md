@@ -1,13 +1,30 @@
-# Introduction to Deep Learning
+# This repositary contains the exersice from the course Introduction to Deep Learning in WS 2018/2019
+
+## Exercise 1
+1. Linear classifiers  
+2. Two-Layer NN
+
+## Exercise 2
+Build my own DL library:  
+1. conected layer  
+2. Bacth normalization  layer
+3. Drop out layer
+
+## Exercise 3
+1. Classification on CIFAR-10 Dataset  
+2. Semantic segmentation based on FCN using transfering learning
+
+## Exercise 4
+Some intersting application exersices:  
+1. Fatial keypints detection  
+2. RNN
+
+%% Acknnowledgements are on TUM 
 # Technical University Munich - WS 2018/19
 
 1. Python Setup
 2. PyTorch Installation
 3. Exercise Download
-4. Dataset Download
-5. Exercise Submission
-6. Acknowledgments
-
 
 ## 1. Python Setup
 
@@ -79,15 +96,7 @@ Unfortunately, the installation depends on the individual system configuration (
 Follow the *Get Started* section on the official PyTorch [website](http://pytorch.org/) to choose and install your version.
 
 
-## 3. Exercise Download
-
-Our exercise is structured with git submodules. At each time we start with a new exercise you have to populate the respective exercise directory. __Access to the corresponding repositories will be granted once the new exercise starts.__
-You obtain the exercises simply execute
-
-`./get_exercise.sh {0, 1, 2, 3, 4}`
-
-
-## 4. Dataset Download
+## 3. Dataset Download
 
 To download the datasets required for an exercise, execute the respective download script located in the exercise directory:
 
@@ -95,33 +104,3 @@ To download the datasets required for an exercise, execute the respective downlo
 
 You will need ~400MB of disk space.
 
-
-## 5. Exercise Submission
-
-After completing an exercise you will be submitting trained models to be
-automatically evaluated on a test set on our server. To this end, login or register for an account at:
-
-https://dvl.in.tum.de/teaching/submission/
-
-Note that only students, who have registered for this class in TUM Online can
-register for an account. This account provides you with temporary credentials to login onto the machines at our chair.
-
-After you have worked through an exercise, your saved models will be in the corresponding `models` subfolder of this exercise. In order to submit the models you execute our submit script:
-
-`./submit_exercise.sh X w9999`
-
-where `X={0,1,2,3,4}` for the respective exercise and `w9999` has to be substituted by your username in our system.
-
-This script uses *rsync* to transfer your code and the models onto our test server and into your user's home directory `~/submit/EX{0, 1, 2, 3, 4}`. Make sure *rsync* is installed on your local machine and don't change the filenames of your models!
-
-Once the models are uploaded to `~/submit/EX{0, 1, 2, 3, 4}`, you can login to the above website, where they can be selected for submission. Note that you have to explicitly submit the files through our web interface, just uploading them to the respective directory is not enough.
-
-You will receive an email notification with the results upon completion of the
-evaluation. To make it more fun, you will be able to see a leader board of everyone's (anonymous) scores on the login part of the submission website.
-
-Note that you can re-evaluate your models until the deadline of the current exercise. Whereas the email contains the result of the current evaluation, the entry in the leader board always represents the best score for the respective exercise.
-
-
-## 7. Acknowledgments
-
-We want to thank the **Stanford Vision Lab** and **PyTorch** for allowing us to build these exercises on material they had previously developed.
